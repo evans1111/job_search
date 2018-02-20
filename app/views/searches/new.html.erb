@@ -1,0 +1,9 @@
+<h3>Enter a job title to search for:</h3>
+<%= form_tag("/search", method: "post") do %>
+  <%= label_tag(:q, "What type of job are you searching for?") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:l, "Enter a city") %>
+  <%= text_field_tag(:l) %>
+  <%= submit_tag("Search")%>
+
+<% end %>

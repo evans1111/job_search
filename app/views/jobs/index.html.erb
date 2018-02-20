@@ -1,0 +1,13 @@
+<h3>Search Craiglist Jobs</h3>
+<br>
+
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<% @list.each do |x| %>
+  <li><%= x %></li>
+  <% end %>

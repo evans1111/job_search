@@ -1,0 +1,11 @@
+
+<% @a.each do |x| %>
+   <h5 id="job-title"><%= x[:title] %></h5>
+  <ul>
+    <li id="job-description"> <b>Description: </b><%= x[:summary] %></li>
+    <li id="company-name"> <b>Company:</b> <%= x[:company]%></li>
+  </ul>
+  <br>
+<% end %>
+
+<br>
